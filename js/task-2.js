@@ -16,9 +16,10 @@ const ingredients = [
 
 
 const ulIngredients = document.querySelector('#ingredients')
-const createLi = ingredients.map(ingredient => {
-  const liRef = document.createElement('li');
-  liRef.textContent = ingredient;
-  return liRef;
+const createItem = ingredients.map(ingredient => {
+  const itemRef = document.createElement('li');
+  itemRef.textContent = ingredient;
+  return itemRef;
 });
-  ulIngredients.append(...createLi);
+ulIngredients.append(...createItem);
+console.log(ulIngredients);
