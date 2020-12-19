@@ -13,8 +13,8 @@ alt: 'Group of Horses Running',
 },
 ];
 
-let markup = ``;
-images.forEach(image => (markup += `<li><img src="${image.url}" alt="${image.alt}" /></li>`),
+let galleryList = ``;
+images.forEach(image => (galleryList += `<li><img src="${image.url}" alt="${image.alt}" /></li>`),
 );
 const ulGallery = document.querySelector('#gallery')
-    ulGallery.insertAdjacentHTML('beforeend', markup);
+    ulGallery.insertAdjacentHTML('beforeend', galleryList);
