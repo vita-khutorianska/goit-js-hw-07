@@ -1,0 +1,13 @@
+const inputRef = document.querySelector('#name-input');
+const outputRef = document.querySelector('#name-output');
+inputRef.addEventListener('input', changeInputValue);
+function changeInputValue(event) {
+    inputRef.value ? outputRef.textContent = event.currentTarget.value : outputRef.textContent = event.target.value;
+}
+
+
+// inputRef.addEventListener('input', event => { inputRef.value ? outputRef.textContent = event.currentTarget.value : outputRef.textContent = event.target.value });
+
+
+
+
