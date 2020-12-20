@@ -1,8 +1,6 @@
 
 const inputRef = document.querySelector('#validation-input');
 
-
-
 function inputHandlerBlur() {
   if (
     inputRef.value.length > Number(inputRef.dataset.length) ||
