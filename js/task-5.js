@@ -12,8 +12,8 @@
 
 const inputRef = document.querySelector('#name-input');
 const outputRef = document.querySelector('#name-output');
-inputRef.addEventListener('input', checkInputText)
-function checkInputText(event) {  
+inputRef.addEventListener('input', changeInputValue)
+function changeInputValue(event) {  
  outputRef.textContent = event.target.value === "" ?  'незнакомец': event.target.value; 
  }
 
